@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>MYIDWEB -- Web Development</title>
+	<link rel="shortcut icon" href= "css/img/MYIDWEB_LogoBlack.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/6558700a20.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js"></script>
+	
+	
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="petalos loader" id="loader">
+		<img src="css/img/Loader/p1.png">
+         <img src="css/img/Loader/p2.png">
+         <img src="css/img/Loader/p3.png">
+         <img src="css/img/Loader/p4.png">
+         <img src="css/img/Loader/p5.png">
+         <img src="css/img/Loader/p6.png">
+         <img src="css/img/Loader/p7.png">
+    </div>
+
+	<div class="contenedor">
+	</div>
+	
+	<img class="logo" src="css/img/MYIDWEB_Logo.ico">
+	
+	<!------- ----- ----- ---------<canvas class="canvas" id="canvas"></canvas> ----- ----- ----- ----- ----- --->
+
+
+	<div class="texto">
+		<p class="titulo1"> ¿Quiénes somos?</p>
+		<div class="parrafo1">
+		<p > Empresa dedicada al desarrollo de software, capaz de crear aplicaciones y sitios web.</p>
+		<p > Ofrecemos presencia en internet, una nueva forma de comercializar sus productos.</p>
+		</div>
+
+		<p class="titulo2"> Visión.</p>
+		<div class="parrafo2">
+		<p> Empresa visionaria en soluciones innovadoras de comercializar productos, </p>
+		<p> como de proporcionar herramientas dedicadas a un entorno laboral.</p>
+		</div>
+
+		<p class="titulo3"> Misión.</p>
+		<div class="parrafo3">
+		<p> Ser una empresa que ofrece calidad a sus clientes apoyada en la comunicación existente con </p>
+		<p> ellos, creando vínculos que florezcan en un entorno de beneficio mutuo.</p>
+		</div>
+		
+		<p class="titulo4"> CEO.</p>
+		<div class="parrafo4">
+		<p> Programador que ha trabajado en el proyecto Tlamati (aplicación educativa para el aprendizaje  </p>
+		<p> de la historia prehispánica con modelos en realidad aumentada) y en Maxtraca (un simulador de una matraca patria).</p>
+		</div>	
+	</div>
+	<div class="texto fade" >
+		<div class="plan1">
+		<p class="paquete"> Paquete 1.</p>
+		<p> Es una pagina de aterrizaje también llamada como "Landing-page", en la que únicamente se anuncia el producto o servicio que ofrezcas, NO SE PUEDEN REALIZAR COMPRAS EN ELLA.(*Podemos anunciar inclusive tu catalogo digital de tener uno).</p>		</div>
+		<div class="plan2">
+		<p class="paquete"> Paquete 2.</p>
+		<p> Conocido como carrito de compras, tienda en linea o "Ecommerce", en donde se muestran tus productos y el cliente los puede adquirir a través de este, NO NOS ENCARGAMOS DEL METODO DE LOS ENVIOS.</p>
+		</div>
+		<div class="plan3">
+		<p class="paquete"> Paquete 3.</p>
+		<p> Si los dos paquetes anteriores no se adaptan a tus necesidades podemos brindarte un software (programa) que si se adapte a ellas.</p>
+		</div>
+		<div class="general">
+		<p class="paquete"> TODOS LOS PAQUETES TIENEN ESTAS CARACTERISTICAS.</p>
+		<p> Un año con el host y dominio.</p>
+		<P>Cuentas ilimitadas de correo.</p>
+		<P>Certificado SSD (*No quieres que tú página aparezca como sospechosa o que les aparezca un mensaje de advertencia al entrar, da seguridad a tus clientes.)</p>
+		
+		</div>
+	</div>
+	
+	<div class="direcciones">
+		<!--<a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>-->
+		<a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+	</div>
+	
+	<div class="barras">
+		<span class="barra active" onclick="posicionSlide(1)"></span>
+		<span class="barra" onclick="posicionSlide(2)"></span>
+		<!--<span class="barra" onclick="posicionSlide(3)"></span>-->
+	</div>
+	
+	<!------- ----- ----- ----- ----- MENU ----- ----- ----- ----- ----- --->
+	<div class="menu">
+		<a class="flecha" href="#">
+			<i class="fas fa-chevron-circle-down"></i>
+		</a>
+				
+		<!-----<span ><i class="far fa-moon" ></i></span>----- --->
+		
+		<a class="tema" id="tema" href="#">
+			<i class="fas fa-moon" id="moon"></i>
+			<i class="fas fa-meteor" id="meteor" ></i>
+		</a>		
+		
+		<a class="whatsapp" href="https://services.tochat.be/es/n/525528238290">
+			<i class="fab fa-whatsapp"></i>
+		</a>
+		<a class="email" href="mailto:animebuda@gmail.com?subject=Información Página Web&body=¡Buenos Días! Me gustaría recibir información sobre la creación de una pagina web.">
+			<i class="fas fa-envelope"></i>
+		</a>
+	</div>
+	
+	<script src="js/main.js"></script>
+	<script src="js/tree.js" id = "texto"></script>
+</body>
+</html>
